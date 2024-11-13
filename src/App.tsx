@@ -1,5 +1,4 @@
-import { Chat } from "@/Chat/Chat";
-import { ChatIntro } from "@/Chat/ChatIntro";
+import Todo from "./todo/todo.tsx";
 import { Layout } from "@/Layout";
 import { SignInForm } from "@/SignInForm";
 import { UserMenu } from "@/components/UserMenu";
@@ -18,8 +17,7 @@ export default function App() {
     >
       <>
         <Authenticated>
-          <ChatIntro />
-          <Chat viewer={(user ?? {})._id!} />
+            <Todo />
         </Authenticated>
         <Unauthenticated>
           <SignInForm />
