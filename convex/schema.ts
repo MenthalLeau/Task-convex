@@ -11,4 +11,9 @@ export default defineSchema({
     userId: v.id("users"),
     body: v.string(),
   }),
+    tasks: defineTable({
+        title: v.string(),
+        description: v.string(),
+        status: v.string(),
+    }),
 });
